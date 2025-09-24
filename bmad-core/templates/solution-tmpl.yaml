@@ -1,0 +1,181 @@
+# <!-- Powered by BMAD™ Core -->
+template:
+  id: solution-template-v1
+  name: Solution Document
+  version: 1.0
+  output:
+    format: markdown
+    filename: docs/solution.md
+    title: "{{project_name}} Solution Document"
+
+workflow:
+  mode: interactive
+  elicitation: advanced-elicitation
+
+sections:
+  - id: introduction
+    title: Introduction
+    instruction: |
+      Overview of the solutioning process, document purpose, and revision history.
+      Summarize the context and intended audience for each major section.
+    sections:
+      - id: changelog
+        title: Change Log
+        type: table
+        columns: [Date, Version, Description, Author]
+        instruction: Track document versions and changes
+
+  - id: solution-history
+    title: Solution History
+    instruction: Chronological log of key events, decisions, and changes in the solutioning process.
+    type: table
+    columns: [Date, Phase, Comment, Participants]
+
+  - id: pursuit-team
+    title: Pursuit Team Participants
+    instruction: |
+      List key individuals (internal and client) involved in solutioning.
+      Ensure Product Lifecycle Management Practice is included as early as possible.
+    type: table
+    columns: [Person, Role, Company]
+
+  - id: client-landscape
+    title: Client Landscape
+    instruction: |
+      Initial assessment of client, business context, executive sponsors, and technical evaluation.
+      This section is for internal consumption and its primary audience is the Commercial Team.
+    sections:
+      - id: deal-strategy
+        title: Deal Strategy
+        instruction: Business problem and desired outcomes. Can be pasted from Deal Strategy Document.
+      - id: technical-evaluation
+        title: Initial Technical Evaluation
+        instruction: Technical approach/offering that will solve the business problem.
+      - id: executive-sponsors
+        title: Executive Sponsors
+        instruction: Client executive sponsor and roles (who will make decisions).
+      - id: lightwave-alignment
+        title: Lightwave Alignment
+        instruction: Key points from Lightwave Alignment artifact (Field CTO).
+
+  - id: solution-alternatives
+    title: Solution Alternatives
+    instruction: |
+      Assessment of the customer’s problem and possible solutions, including competing and contradictory alternatives.
+      This section is for internal consumption and its primary audience is the Commercial Team.
+    sections:
+      - id: customer-need
+        title: Customer Need
+        instruction: Desired business outcome/problem framing. Include both customer and internal perspectives.
+      - id: assumptions
+        title: Assumptions
+        type: table
+        columns: [Assumption, Confidence, Adjustment if Incorrect]
+        instruction: List of assumptions made in deriving the solution alternatives. Label dependencies as needed.
+      - id: risks
+        title: Risks
+        type: table
+        columns: [Risk, Level, Mitigation, Impact]
+        instruction: List of risks and risk mitigation strategies. Quantify impact where possible.
+      - id: prerequisites
+        title: Prerequisites
+        instruction: Required artifacts, access, documents, diagrams, personas, etc. Note any red flags.
+      - id: constraints
+        title: Constraints
+        instruction: Known constraints (security, access, resources, turnover, etc.) that could block success.
+      - id: approach-1
+        title: Approach #1
+        instruction: |
+          Technical and resource approach to solving the problem.
+          Discuss benefits to the customer in light of risks.
+          Include initial timeline, major milestones, solution context, and high-level architecture.
+      - id: alternate-approach
+        title: Alternate Approach
+        instruction: |
+          Second solution (if applicable), differences in scope, technical aspects, or resourcing.
+          Discuss benefits and risks.
+
+  - id: solution-review-outcome
+    title: Solution Review Outcome
+    instruction: |
+      Outcome of solution governance review and its impact.
+      Summarize consensus meeting results and selected alternative.
+
+  - id: proposed-solution
+    title: Proposed Solution
+    instruction: |
+      Solution version presented to customer; client-facing language only.
+      Drafted in conjunction with Commercial.
+    sections:
+      - id: solution-summary
+        title: Solution Summary
+        type: table
+        columns:
+          [
+            Offering Type,
+            Engagement Type,
+            Technical Challenge,
+            Technical Environment,
+            Team Size/Duration,
+            Deliverables,
+            Delivery Leadership Skill Set
+          ]
+        instruction: Summarize the selected solution in a structured format.
+      - id: proposal
+        title: Proposal
+        instruction: |
+          Content for proposal deck/slides or references to standard content.
+          Link to proposal deck if available; identify source opportunity if based on earlier proposal.
+      - id: team-structure
+        title: Proposed Team Structure
+        type: table
+        columns: [Role/Tier/Location, Practice/Skills, Start Date, End Date]
+        instruction: |
+          Describe roles and skills needed.
+          Include Product Delivery Leadership.
+          Validate estimates with specialty practice leaders.
+
+  - id: finalized-input-sow
+    title: Finalized Input to SOW
+    instruction: |
+      SOW-ready solution content, finalized staffing, additional assumptions.
+      Ensure deliverables are SOW-ready and language is suitable for legal review.
+
+  - id: letter-to-lifecycle-sales
+    title: Letter to Product Lifecycle Manager and Sales Team
+    instruction: |
+      Handoff expectations set with the customer during solutioning.
+      Include 2-3 points why 3Pillar is the right choice.
+      If Field CTO involved, include their perspective.
+
+  - id: solutioning-retrospective
+    title: Solutioning Retrospective
+    instruction: |
+      Post-award review of the solution document.
+      Conduct retrospective after delivery to provide feedback to the solutioning team.
+
+  - id: appendix-a
+    title: Appendix A: Research (or Prep)
+    instruction: |
+      Hypothesis, opportunity context, risks, research, pursuit plan.
+      Use as a placeholder for collaboration and raw notes during client discovery.
+
+    sections:
+      - id: opportunity-context
+        title: Opportunity Context
+        instruction: Client need, desired business outcomes, desired deliverables.
+      - id: risks
+        title: Risks
+        instruction: Gaps in information, red flags, access to critical contacts.
+      - id: research
+        title: Research
+        instruction: Pursuit plan, tech stack, market research.
+      - id: hypothesis
+        title: Hypothesis
+        instruction: What the problem is and what 3Pillar could do to help.
+
+  - id: appendix-b
+    title: Appendix B: Engagement Types
+    instruction: |
+      Engagement types, prerequisites, and characteristics.
+      Reference standard engagement models and link to additional resources if needed.

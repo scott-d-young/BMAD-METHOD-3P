@@ -1,0 +1,125 @@
+BMAD-METHOD-3P/bmad-core/templates/rfp-tmpl.yaml
+# <!-- Powered by BMAD™ Core -->
+template:
+  id: rfp-template-v1
+  name: Request for Proposal (RFP) Intake
+  version: 1.0
+  output:
+    format: markdown
+    filename: docs/rfp.md
+    title: "{{project_name}} RFP Intake Document"
+
+workflow:
+  mode: interactive
+  elicitation: advanced-elicitation
+
+sections:
+  - id: introduction
+    title: Introduction
+    instruction: |
+      Briefly describe the purpose of this RFP, the client organization, and the context for the request.
+    sections:
+      - id: changelog
+        title: Change Log
+        type: table
+        columns: [Date, Version, Description, Author]
+        instruction: Track document versions and changes
+
+  - id: client-overview
+    title: Client Overview
+    instruction: |
+      Summarize key information about the client organization, including business domain, size, location, and relevant history.
+    sections:
+      - id: business-domain
+        title: Business Domain
+        instruction: Describe the client's industry and core business.
+      - id: organization-profile
+        title: Organization Profile
+        instruction: Summarize company size, locations, and notable history.
+      - id: key-personnel
+        title: Key Personnel
+        type: table
+        columns: [Name, Role, Contact Info]
+        instruction: List main client contacts for this RFP.
+
+  - id: rfp-summary
+    title: RFP Summary
+    instruction: |
+      Provide a concise summary of the RFP, including its goals, scope, and timeline.
+    sections:
+      - id: goals
+        title: Goals
+        type: bullet-list
+        instruction: List the main objectives the client wants to achieve.
+      - id: scope
+        title: Scope
+        instruction: Describe the boundaries of the work requested (in-scope and out-of-scope).
+      - id: timeline
+        title: Timeline
+        type: table
+        columns: [Milestone, Date, Notes]
+        instruction: List key dates and deadlines.
+
+  - id: requirements
+    title: Requirements
+    instruction: |
+      Capture all functional and non-functional requirements specified in the RFP.
+    sections:
+      - id: functional-requirements
+        title: Functional Requirements
+        type: numbered-list
+        instruction: List all functional requirements as stated in the RFP.
+      - id: non-functional-requirements
+        title: Non-Functional Requirements
+        type: numbered-list
+        instruction: List all non-functional requirements (performance, security, compliance, etc.).
+      - id: technical-requirements
+        title: Technical Requirements
+        instruction: Document any specific technology, platform, or integration requirements.
+
+  - id: constraints
+    title: Constraints
+    instruction: |
+      List any constraints, limitations, or mandatory conditions specified by the client (budget, resources, legal, etc.).
+    type: bullet-list
+
+  - id: evaluation-criteria
+    title: Evaluation Criteria
+    instruction: |
+      Document how proposals will be evaluated (scoring, priorities, must-haves, etc.).
+    sections:
+      - id: criteria-list
+        title: Criteria List
+        type: bullet-list
+        instruction: List all evaluation criteria.
+      - id: weighting
+        title: Weighting
+        type: table
+        columns: [Criterion, Weight, Notes]
+        instruction: If available, provide weighting or priority for each criterion.
+
+  - id: submission-instructions
+    title: Submission Instructions
+    instruction: |
+      Detail how, when, and where proposals should be submitted, including required formats and contacts.
+
+  - id: q-and-a
+    title: Q&A / Clarifications
+    instruction: |
+      Capture any questions asked and clarifications provided during the RFP process.
+    type: table
+    columns: [Question, Answer, Date, Source]
+
+  - id: appendix
+    title: Appendix
+    instruction: |
+      Attach any supporting documents, references, or links relevant to the RFP.
+    sections:
+      - id: reference-docs
+        title: Reference Documents
+        type: bullet-list
+        instruction: List all referenced or attached documents.
+      - id: links
+        title: Useful Links
+        type: bullet-list
+        instruction: Provide URLs to relevant resources.
