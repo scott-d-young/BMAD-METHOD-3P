@@ -8,13 +8,11 @@ This checklist serves as a comprehensive framework for the Solution Architect to
 
 Before proceeding with this checklist, ensure you have access to:
 
-1. solution.md - The primary architecture document (check docs/architecture.md)
+1. solution.md - The primary document that is 3Pillar's assessment of the customer context and need, along with a clear statement on the requirements and likely solution.
 2. rfp.md - Request for Proposal for requirements alignment (check docs/rfp.md)
-3. prd.md - Product Requirements Document for requirements alignment (check docs/prd.md)
-4. frontend-architecture.md or fe-architecture.md - If this is a UI project (check docs/frontend-architecture.md)
-5. Any system diagrams referenced in the architecture
-6. API documentation if available
-7. Technology stack details and version specifications
+3. deal-strategy.md - The document outlining the strategic approach to the deal, including the business case, financial projections, and risk mitigation strategies.
+4. lightwave-alignment.md - The document outlining the alignment of the solution with the Lightwave platform.
+
 
 IMPORTANT: If any required documents are missing or inaccessible, immediately ask the user for their location or content before proceeding.
 

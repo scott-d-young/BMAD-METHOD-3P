@@ -13,18 +13,6 @@ workflow:
   elicitation: advanced-elicitation
 
 sections:
-  - id: introduction
-    title: Introduction
-    instruction: |
-      Overview of the solutioning process, document purpose, and revision history.
-      Summarize the context and intended audience for each major section.
-    sections:
-      - id: changelog
-        title: Change Log
-        type: table
-        columns: [Date, Version, Description, Author]
-        instruction: Track document versions and changes
-
   - id: solution-history
     title: Solution History
     instruction: Chronological log of key events, decisions, and changes in the solutioning process.
@@ -34,7 +22,8 @@ sections:
   - id: pursuit-team
     title: Pursuit Team Participants
     instruction: |
-      List key individuals (internal and client) involved in solutioning.
+      List key individuals from 3Pillar involved in solutioning. Key individuals include the Field CTO, Sales Lead, Product Owner, and Lifecycle Lead.
+      Key client individuals include both technical, product and business stakeholders, usually at the director level (for larger organizations), or the VP or C-level for medium and small orgs. This is not always structly true.
       Ensure Product Lifecycle Management Practice is included as early as possible.
     type: table
     columns: [Person, Role, Company]
@@ -95,12 +84,6 @@ sections:
           Second solution (if applicable), differences in scope, technical aspects, or resourcing.
           Discuss benefits and risks.
 
-  - id: solution-review-outcome
-    title: Solution Review Outcome
-    instruction: |
-      Outcome of solution governance review and its impact.
-      Summarize consensus meeting results and selected alternative.
-
   - id: proposed-solution
     title: Proposed Solution
     instruction: |
@@ -116,9 +99,11 @@ sections:
             Engagement Type,
             Technical Challenge,
             Technical Environment,
+            Phases,
             Team Size/Duration,
+            Milestones,
             Deliverables,
-            Delivery Leadership Skill Set
+            Delivery Leadership Skill Set,
           ]
         instruction: Summarize the selected solution in a structured format.
       - id: proposal
@@ -134,48 +119,3 @@ sections:
           Describe roles and skills needed.
           Include Product Delivery Leadership.
           Validate estimates with specialty practice leaders.
-
-  - id: finalized-input-sow
-    title: Finalized Input to SOW
-    instruction: |
-      SOW-ready solution content, finalized staffing, additional assumptions.
-      Ensure deliverables are SOW-ready and language is suitable for legal review.
-
-  - id: letter-to-lifecycle-sales
-    title: Letter to Product Lifecycle Manager and Sales Team
-    instruction: |
-      Handoff expectations set with the customer during solutioning.
-      Include 2-3 points why 3Pillar is the right choice.
-      If Field CTO involved, include their perspective.
-
-  - id: solutioning-retrospective
-    title: Solutioning Retrospective
-    instruction: |
-      Post-award review of the solution document.
-      Conduct retrospective after delivery to provide feedback to the solutioning team.
-
-  - id: appendix-a
-    title: Appendix A: Research (or Prep)
-    instruction: |
-      Hypothesis, opportunity context, risks, research, pursuit plan.
-      Use as a placeholder for collaboration and raw notes during client discovery.
-
-    sections:
-      - id: opportunity-context
-        title: Opportunity Context
-        instruction: Client need, desired business outcomes, desired deliverables.
-      - id: risks
-        title: Risks
-        instruction: Gaps in information, red flags, access to critical contacts.
-      - id: research
-        title: Research
-        instruction: Pursuit plan, tech stack, market research.
-      - id: hypothesis
-        title: Hypothesis
-        instruction: What the problem is and what 3Pillar could do to help.
-
-  - id: appendix-b
-    title: Appendix B: Engagement Types
-    instruction: |
-      Engagement types, prerequisites, and characteristics.
-      Reference standard engagement models and link to additional resources if needed.
