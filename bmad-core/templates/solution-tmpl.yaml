@@ -50,36 +50,35 @@ sections:
   - id: solution-alternatives
     title: Solution Alternatives
     instruction: |
-      Assessment of the customer’s problem and possible solutions, including competing and contradictory alternatives.
-      This section is for internal consumption and its primary audience is the Commercial Team.
-    sections:
-      - id: customer-need
-        title: Customer Need
-        instruction: Desired business outcome/problem framing. Include both customer and internal perspectives.
-      - id: assumptions
-        title: Assumptions
-        type: table
-        columns: [Assumption, Confidence, Adjustment if Incorrect]
-        instruction: List of assumptions made in deriving the solution alternatives. Label dependencies as needed.
-      - id: risks
-        title: Risks
-        type: table
-        columns: [Risk, Level, Mitigation, Impact]
-        instruction: List of risks and risk mitigation strategies. Quantify impact where possible.
-      - id: prerequisites
-        title: Prerequisites
-        instruction: Required artifacts, access, documents, diagrams, personas, etc. Note any red flags.
-      - id: constraints
-        title: Constraints
-        instruction: Known constraints (security, access, resources, turnover, etc.) that could block success.
-      - id: approach-1
-        title: Approach #1
-        instruction: |
-          Technical and resource approach to solving the problem.
-          Discuss benefits to the customer in light of risks.
-          Include initial timeline, major milestones, solution context, and high-level architecture.
-      - id: alternate-approach
-        title: Alternate Approach
+      instruction: |
+        Assessment of the customer’s problem and possible solutions, including competing and contradictory alternatives.
+        IMPORTANT: The Solution Architect must generate multiple solution alternatives (technical, schedule, risk, cost) for internal review. These alternatives are not for direct client consumption, but for internal proposal owners to select the best option to propose to the client.
+      sections:
+        - id: customer-need
+          title: Customer Need
+          instruction: Desired business outcome/problem framing.
+        - id: assumptions
+          title: Assumptions
+          type: table
+          columns: [Assumption, Confidence, Adjustment if Incorrect]
+          instruction: List of assumptions made in deriving the solution alternatives. Label dependencies as needed.
+        - id: risks
+          title: Risks
+          type: table
+          columns: [Risk, Level, Mitigation, Impact]
+          instruction: List of risks and risk mitigation strategies. Quantify impact where possible.
+        - id: prerequisites
+          title: Prerequisites
+          instruction: Required artifacts, access, documents, diagrams, personas, etc. Note any red flags.
+        - id: constraints
+          title: Constraints
+          instruction: Known constraints (security, access, resources, turnover, etc.) that could block success.
+        - id: approach-1
+          title: Approach #1
+          instruction: Technical/resource approach, timeline, milestones, solution context/architecture.
+        - id: alternate-approach
+          title: Alternate Approach
+          instruction: Second solution (if applicable), differences in scope/tech/resources.
         instruction: |
           Second solution (if applicable), differences in scope, technical aspects, or resourcing.
           Discuss benefits and risks.
@@ -93,7 +92,7 @@ sections:
       - id: solution-summary
         title: Solution Summary
         type: table
-        columns:
+        rows:
           [
             Offering Type,
             Engagement Type,

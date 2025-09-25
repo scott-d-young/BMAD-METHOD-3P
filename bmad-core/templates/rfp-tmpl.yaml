@@ -1,4 +1,3 @@
-BMAD-METHOD-3P/bmad-core/templates/rfp-tmpl.yaml
 # <!-- Powered by BMAD™ Core -->
 template:
   id: rfp-template-v1
@@ -18,6 +17,7 @@ sections:
     title: Introduction
     instruction: |
       Briefly describe the purpose of this RFP, the client organization, and the context for the request.
+      Note: This RFP serves as the source of client requirements and context for which the Solution Architect will generate multiple technical, schedule, risk, and cost alternatives for internal review and selection before a proposal is made to the client.
     sections:
       - id: changelog
         title: Change Log

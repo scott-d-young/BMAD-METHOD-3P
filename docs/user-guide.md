@@ -6,13 +6,15 @@ This guide will help you understand and effectively use the BMad Method for agil
 
 First, here is the full standard Greenfield Planning + Execution Workflow. Brownfield is very similar, but it's suggested to understand this greenfield first, even if on a simple project before tackling a brownfield project. The BMad Method needs to be installed to the root of your new project folder. For the planning phase, you can optionally perform it with powerful web agents, potentially resulting in higher quality results at a fraction of the cost it would take to complete if providing your own API key or credits in some Agentic tools. For planning, powerful thinking models and larger context - along with working as a partner with the agents will net the best results.
 
+**The Solution Architect (SA) agent plays a critical role in this process. The SA analyzes client-facing problems (such as those described in RFPs) and generates multiple solution alternatives (technical, schedule, risk, cost) for internal proposal owners to review and select before presenting to the client. This ensures that the business needs described by the prospect are translated into actionable, well-considered solution options.**
+
 If you are going to use the BMad Method with a Brownfield project (an existing project), review **[Working in the Brownfield](./working-in-the-brownfield.md)**.
 
 If the diagrams below don't render, install Markdown All in One along with the Markdown Preview Mermaid Support plugins to VSCode (or one of the forked clones). With these plugins, if you right click on the tab when open, there should be an Open Preview option, or check the IDE documentation.
 
 ### The Planning Workflow (Web UI or Powerful IDE Agents)
 
-Before development begins, BMad follows a structured planning workflow that's ideally done in web UI for cost efficiency:
+Before development begins, BMad follows a structured planning workflow that's ideally done in web UI for cost efficiency. The Solution Architect (SA) is responsible for generating solution alternatives for internal review, based on client-facing documents such as RFPs. The SA's output enables proposal owners to select the best option to propose to the client.
 
 ```mermaid
 graph TD

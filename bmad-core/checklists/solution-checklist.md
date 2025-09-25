@@ -2,7 +2,7 @@
 
 # Solution Validation Checklist
 
-This checklist serves as a comprehensive framework for the Solution Architect to validate the solution design  before development execution. The Solution Architect should systematically work through each item, ensuring the architecture is robust, scalable, secure, and aligned with the product requirements.
+This checklist serves as a comprehensive framework for the Solution Architect to validate the solution design before development execution. The Solution Architect must generate multiple solution alternatives (technical, schedule, risk, cost) for internal decision-making, not just a single solution. Systematically work through each item, ensuring all alternatives are robust, scalable, secure, and aligned with the product requirements, and clearly document tradeoffs for internal proposal owner selection.
 
 [[LLM: INITIALIZATION INSTRUCTIONS - REQUIRED ARTIFACTS
 
@@ -12,6 +12,7 @@ Before proceeding with this checklist, ensure you have access to:
 2. rfp.md - Request for Proposal for requirements alignment (check docs/rfp.md)
 3. deal-strategy.md - The document outlining the strategic approach to the deal, including the business case, financial projections, and risk mitigation strategies.
 4. lightwave-alignment.md - The document outlining the alignment of the solution with the Lightwave platform.
+5. customer-notes.md - Any notes from customer conversations that provide information about customer needs
 
 
 IMPORTANT: If any required documents are missing or inaccessible, immediately ask the user for their location or content before proceeding.

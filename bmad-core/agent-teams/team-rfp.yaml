@@ -1,0 +1,17 @@
+# <!-- Powered by BMAD™ Core -->
+bundle:
+  name: Team RFP
+  icon: 🚀
+  description: Team capable of translating an RFP into a proposal that includes business, technical, resource, pricing and contractual terms.
+agents:
+  - bmad-orchestrator
+  - sa
+  - proposal-master
+  - pricing-expert
+workflows:
+  - brownfield-fullstack.yaml
+  - brownfield-service.yaml
+  - brownfield-ui.yaml
+  - greenfield-fullstack.yaml
+  - greenfield-service.yaml
+  - greenfield-ui.yaml

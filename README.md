@@ -17,7 +17,7 @@ Foundations in Agentic Agile Driven Development, known as the Breakthrough Metho
 
 **BMAD-METHOD™'s Two Key Innovations:**
 
-**1. Agentic Planning:** Dedicated agents (Analyst, PM, Architect) collaborate with you to create detailed, consistent PRDs and Architecture documents. Through advanced prompt engineering and human-in-the-loop refinement, these planning agents produce comprehensive specifications that go far beyond generic AI task generation.
+**1. Agentic Planning:** Dedicated agents (Analyst, PM, Architect, Solution Architect) collaborate with you to create detailed, consistent PRDs, Solution Documents, and Architecture documents. The Solution Architect (SA) analyzes client-facing problems (such as those described in RFPs) and generates multiple solution alternatives (technical, schedule, risk, cost) for internal proposal owners to review and select before presenting to the client. Through advanced prompt engineering and human-in-the-loop refinement, these planning agents produce comprehensive specifications that go far beyond generic AI task generation.
 
 **2. Context-Engineered Development:** The Scrum Master agent then transforms these detailed plans into hyper-detailed development stories that contain everything the Dev agent needs - full context, implementation details, and architectural guidance embedded directly in story files.
 
@@ -40,7 +40,7 @@ This two-phase approach eliminates both **planning inconsistency** and **context
 
 - **[Install and Build software with Full Stack Agile AI Team](#quick-start)** → Quick Start Instruction
 - **[Learn how to use BMad](docs/user-guide.md)** → Complete user guide and walkthrough
-- **[See available AI agents](/bmad-core/agents)** → Specialized roles for your team
+- **[See available AI agents](/bmad-core/agents)** → Specialized roles for your team, including the Solution Architect (SA) for generating solution alternatives for internal proposal selection
 - **[Explore non-technical uses](#-beyond-software-development---expansion-packs)** → Creative writing, business, wellness, education
 - **[Create my own AI agents](docs/expansion-packs.md)** → Build agents for your domain
 - **[Browse ready-made expansion packs](expansion-packs/)** → Game dev, DevOps, infrastructure and get inspired with ideas and examples
